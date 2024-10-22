@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Athena Caleb - Portfolio</title>
+    <title>Certifications - Athena Caleb</title>
 
     <!-- Custom CSS (Bootstrap removed) -->
     <link rel="stylesheet" href="styles.css">
@@ -13,14 +13,14 @@
         .sidebar {
             background-color: #2c2c2c;
             color: #f5f5f5;
-            width: 300px; /* Set width for the sidebar */
+            width: 300px;
             height: 100vh;
             padding: 30px;
-            position: fixed; /* Keep it fixed in the corner */
+            position: fixed;
             top: 0;
             left: 0;
-            z-index: 1000; /* Ensure it's always on top */
-            overflow-y: auto; /* Make it scrollable if the content exceeds height */
+            z-index: 1000;
+            overflow-y: auto;
         }
 
         .sidebar img {
@@ -28,7 +28,6 @@
             width: 175px;
             height: 175px;
             object-fit: cover;
-            
             border: 2px solid #fff;
         }
 
@@ -58,64 +57,43 @@
             padding-left: 10px;
         }
 
-        /* Hero Section Styling */
-        .hero {
-            background: url('cybersecurity-bg.jpg') no-repeat center center/cover;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            text-align: center;
-            position: relative;
-            margin-left: 300px; /* Offset the main content to account for the sidebar width */
+        /* Main Content Styling */
+        main {
+            padding-left: 400px; /* Push the main content to the right to avoid the sidebar */
+            padding-top: 30px;
         }
 
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.6);
-            z-index: 1;
-        }
-
-        .hero .overlay {
-            position: relative;
-            z-index: 2;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
+        h1.res {
+            padding-right: 320px; /* Padding right to leave space */
+            font-size: 2.5rem;
             font-weight: bold;
             margin-bottom: 20px;
         }
 
-        .hero p {
-            font-size: 1.5rem;
-            margin-bottom: 30px;
+        .list-group-item {
+            font-size: 1.1rem;
+            padding: 15px;
         }
 
-        .hero a {
-            padding: 15px 30px;
+        p {
             font-size: 1.2rem;
-            background-color: #007bff;
-            color: #fff;
-            text-decoration: none;
-            transition: background-color 0.3s;
-            border-radius: 5px;
+            line-height: 1.6;
         }
-
-        .hero a:hover {
-            background-color: #0056b3;
+        .art {
+            width: 200px;
+            height: 200px;
         }
-
-        /* General Layout */
-        main {
-            margin-left: 100px; /* Ensure all main content is pushed to the right */
-            padding: 20px;
+        .mang {
+            width: 200px;
+            height: 200px;
+        }
+        .hack {
+            width: 200px;
+            height: 200px;
+        }
+        .tech {
+            width: 200px;
+            height: 200px;
         }
 
         /* Ensure content scrolls properly on smaller devices */
@@ -126,8 +104,8 @@
                 position: relative;
             }
 
-            .hero, main {
-                margin-left: 0;
+            main {
+                padding-left: 0;
             }
         }
     </style>
@@ -156,13 +134,19 @@
 
         <!-- Main Content -->
         <main>
-            <header class="hero">
-                <div class="overlay">
-                    <h1>Welcome to My Portfolio</h1>
-                    <p>Explore my journey in Cyber Security & IoT</p>
-                    <a href="about.html">Learn More</a>
-                </div>
-            </header>
+            <div class="container mt-5">
+                <h1 class="res">Certifications</h1>
+                <ul class="list-group">
+                    <li class="list-group-item">Explained my project - Arthah Finance Manager in Tech Expo - 2024<br>
+                    <img src = "1.jpg" class = "art"></li>
+                    <li class="list-group-item">Completed a certified course in MongoDB <br>
+                        <img src = "4.png" class = "mang"></li>
+                    <li class="list-group-item">Participated in HACKATHON - X, IIT Madras<br>
+                        <img src = "3.jpg" class = "hack"></li>
+                    <li class="list-group-item">Explained Collision simulation in Tech Expo - 2023<br>
+                        <img src = "2.jpg" class = "tech"></li>
+                </ul>
+            </div>
         </main>
     </div>
 </body>
